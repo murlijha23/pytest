@@ -6,7 +6,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 def test_pypi():
     Driver=webdriver.Chrome(ChromeDriverManager().install())
-    Driver.get("https://py.org/")
+    Driver.get("https://pypi.org/")
     Driver.maximize_window()
     Driver.find_element(By.XPATH,"(//a[text()='Log in'])[position()=1]").click()
     Driver.find_element(By.NAME,"username").send_keys("murlijha23")
